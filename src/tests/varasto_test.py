@@ -84,7 +84,7 @@ class TestVarasto(unittest.TestCase):
        
         saldo = self.varasto2.saldo
         self.varasto2.ota_varastosta(1337)
-        self.assertAlmostEqual(self.varasto2.saldo, 0)
+        self.assertAlmostEqual(self.varasto2.saldo, 123)
 
     def test_toString_palauttaa_oikein(self):
         self.assertEqual(
